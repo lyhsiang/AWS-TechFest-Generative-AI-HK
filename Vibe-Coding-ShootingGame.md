@@ -2,7 +2,7 @@
 
 Welcome to the Kiro hands-on experience! In this lab, you will learn how to use Kiro's AI capabilities to build applications quickly and efficiently.
 
-## Practice 2: Build a Web Shooting Game and Deploy to AWS
+## Practice : Build a Web Shooting Game and Deploy to AWS
 
 In this practice, you will use Kiro to create a fully functional web shooting game with advanced features including enemy health bars, power-up systems, Boss stages, and deploy it to AWS serverless architecture.
 
