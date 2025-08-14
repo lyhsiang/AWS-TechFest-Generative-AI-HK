@@ -50,6 +50,9 @@ In this practice, you will use Kiro to create a fully functional web shooting ga
 - Set the model to "Claude Sonnet 4" (or latest available version)
 - Ensure Autopilot is enabled
 
+<img width="472" height="360" alt="image" src="https://github.com/user-attachments/assets/7a6f1648-f717-4e44-a29a-189d096a70d3" />
+
+
 ### Step 4: Create Basic Shooting Game
 
 In Kiro's chat area, enter the following prompt:
@@ -182,7 +185,11 @@ MyShootingGame/
 
 After completion, your shooting game should look like this:
 - Game main screen
+<img width="1056" height="770" alt="image" src="https://github.com/user-attachments/assets/73d51eb4-7109-4d88-8c34-586c4f5d0da8" />
+
 - Game instruction page
+<img width="1134" height="832" alt="image" src="https://github.com/user-attachments/assets/68981c67-260b-4cae-a7ee-8ff18182143b" />
+
 
 ## 🏗️ AWS Architecture
 
