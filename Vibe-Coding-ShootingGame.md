@@ -118,9 +118,9 @@ I would like to add some random dropped items to temporarily power up myself. Su
 
 **Power-up system includes:**
 - Randomly dropped enhancement items
-- **Triple Shot**: Triple shooting ability
-- **Rapid Fire**: Fast shooting mode
-- **Shield**: Protective shield
+- Triple Shot: Triple shooting ability
+- Rapid Fire: Fast shooting mode
+- Shield: Protective shield
 - Temporary enhancement effects
 
 ### Step 9: Add Boss Stage System
