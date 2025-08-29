@@ -2,18 +2,14 @@
 
 > **Master specification-driven development** through practical exercises that demonstrate real-world scenarios and build your expertise with Kiro Specs.
 
-## Workshop Overview
+## Introduction
 
-This workshop provides four progressive exercises designed to teach you different aspects of Kiro Spec mode:
+In this section, you will learn how to use Kiro in a spec-driven development style. Unlike vibe coding where you give high-level instructions and let Kiro figure everything out, spec coding involves creating detailed specifications that break down complex features into manageable, well-defined tasks. This approach provides better control, documentation, and iterative development for complex projects.
 
-1. **Serverless Chatbot** - Learn the basics of spec creation
-2. **E-commerce API** - Practice API-focused specifications  
-3. **Mobile Messaging** - Handle real-time systems and mobile considerations
-4. **Legacy Migration** - Tackle complex system analysis and migration planning
+Kiro's Spec feature allows you to formalize the design and implementation process by iterating on requirements, design, and implementation tasks with structured documentation before letting the agent work through the implementation.
 
-Each exercise follows the complete Kiro Spec workflow: Requirements → Design → Implementation Planning → Execution.
+This is a fully hands-on workshop. Through a series of exercises, you will design, develop, and deploy the same chatbot service as the vibe coding workshop, but using a more structured, specification-driven approach. By the end, you'll have a fully functional chatbot with text, image, and voice capabilities, secured with user authentication.
 
----
 
 ## Exercise 1 - Creating Your First Spec
 
@@ -104,199 +100,245 @@ Kiro will generate a detailed implementation plan with:
 ### Review and Refinement
 Review the generated spec document and refine it based on your specific needs. The spec should be comprehensive enough that any developer could understand what needs to be built.
 
-**Learning Goals:**
-- Master the basic Kiro Spec workflow
-- Practice EARS notation for requirements
-- Understand serverless architecture documentation
-- Learn phased implementation planning
-
 ---
 
-## Exercise 2 - E-commerce API Specification
+## Exercise 2 - Infrastructure Specification
 
-**Scenario:** You need to build a RESTful API for an e-commerce platform with product catalog, shopping cart, and order management.
-
-### 2.1 Setup
-Create a new spec called `EcommerceAPISpec`
-
-### 2.2 Requirements Phase
+### 2.1 AWS Resources Specification
 ```
-Create requirements for an e-commerce API with the following capabilities:
-- Product catalog management (CRUD operations)
-- Shopping cart functionality
-- Order processing and tracking
-- User authentication and authorization
-- Payment integration
-- Inventory management
+Create a detailed specification for all AWS resources needed:
 
-Use EARS notation for all functional requirements and include comprehensive non-functional requirements for performance, security, and scalability.
+- S3 buckets (names, configurations, policies)
+- CloudFront distribution (origins, behaviors, security headers)
+- API Gateway (endpoints, methods, integration types)
+- Lambda functions (runtime, memory, timeout, environment variables)
+- IAM roles and policies (principle of least privilege)
+- Bedrock model access and configurations
+
+Include Infrastructure as Code (IaC) requirements using AWS CDK or CloudFormation.
+```
+**Expected Outcome**
+Kiro will generate a detailed specification for all AWS resources needed for the chatbot application, including naming conventions, configurations, and policies.
+
+### 2.2 Security Specification
+```
+Create a comprehensive security specification covering:
+
+- CORS policies for cross-origin requests
+- Content Security Policy (CSP) headers
+- API authentication and authorization
+- Input validation and sanitization
+- Rate limiting and DDoS protection
+- Encryption at rest and in transit
+- Logging and monitoring requirements
+```
+**Expected Outcome**
+Kiro will generate a detailed security specification that addresses all aspects of application security, from frontend to backend.
+
+## Exercise 3 - Frontend Specification
+
+### 3.1 UI/UX Specification
+```
+Create a detailed frontend specification including:
+
+- User interface mockups and wireframes
+- Component architecture (if using a framework)
+- Responsive design requirements
+- Accessibility compliance (WCAG 2.1 AA)
+- Browser compatibility requirements
+- Performance requirements (loading times, bundle sizes)
+```
+**Expected Outcome**
+Kiro will generate a detailed UI/UX specification with wireframes, component architecture, and design requirements.
+
+### 3.2 Frontend Technical Specification
+```
+Specify the technical implementation details:
+
+- Technology stack (HTML5, CSS3, JavaScript/TypeScript)
+- Build process and bundling requirements
+- Asset optimization strategies
+- Progressive Web App (PWA) considerations
+- Error handling and user feedback mechanisms
 ```
 
-### 2.3 Design Phase
+**Expected Outcome**
+Kiro will generate a detailed technical specification for the frontend implementation, including technology choices, build processes, and optimization strategies.
+
+## Exercise 4 - Backend API Specification
+
+### 4.1 API Specification
 ```
-Design a RESTful API architecture including:
-- OpenAPI specification for all endpoints
-- Database schema design
-- Authentication and authorization flows
+Create a detailed API specification including:
+
+- OpenAPI/Swagger documentation for all endpoints
+- Request/response schemas with validation rules
+- Error response formats and HTTP status codes
+- Rate limiting specifications
+- Authentication/authorization requirements per endpoint
+- Logging and monitoring specifications
+```
+**Expected Outcome**
+Kiro will generate a comprehensive API specification in OpenAPI/Swagger format, detailing all endpoints, request/response schemas, and security requirements.
+
+### 4.2 Lambda Function Specifications
+```
+Create detailed specifications for each Lambda function:
+
+- Function purpose and responsibilities
+- Input/output specifications
 - Error handling strategies
-- Rate limiting and caching strategies
-- Integration patterns for payment providers
+- Performance requirements (cold start, execution time)
+- Memory and timeout configurations
+- Environment variable requirements
+- Integration patterns with other AWS services
 ```
 
-### 2.4 Implementation Planning
+**Expected Outcome**
+Kiro will generate detailed specifications for each Lambda function in the system, including their purpose, inputs/outputs, and configuration requirements.
+
+## Exercise 5 -  Implementation Phase 1 - Infrastructure
+
+### 5.1 Infrastructure as Code
 ```
-Create an implementation plan that includes:
-- Database setup and migrations
-- API endpoint development priority
-- Testing strategy (unit, integration, load testing)
-- Security implementation checklist
-- Deployment and monitoring setup
+Based on our infrastructure specification, implement the AWS CDK stack that creates:
+
+- S3 bucket for static website hosting
+- CloudFront distribution with proper security headers
+- API Gateway with CORS configuration
+- Lambda function placeholders
+- IAM roles with least privilege access
+- All security policies as specified
+
+Deploy this infrastructure and verify all resources are created correctly.
 ```
+**Expected Outcome**
+Kiro will generate and deploy the AWS CDK code that creates all the required infrastructure resources according to the specifications.
 
-**Learning Goals:**
-- Practice with API-focused specifications
-- Understand database design in specs
-- Learn security considerations for APIs
-- Experience with external integration planning
-
----
-
-## Exercise 3 - Mobile App Feature Specification
-
-**Scenario:** Add a real-time messaging feature to an existing mobile application.
-
-### 3.1 Setup
-Create a new spec called `MobileMessagingFeature`
-
-### 3.2 Requirements Development
+### 5.2 Validation and Testing
 ```
-Specify requirements for a real-time messaging feature including:
-- One-on-one and group messaging
-- Message delivery status (sent, delivered, read)
-- File and media sharing
-- Push notifications
-- Offline message sync
-- Message encryption
+Create infrastructure validation tests to ensure:
 
-Focus on mobile-specific considerations like battery life, network connectivity, and user experience.
+- All AWS resources are created with correct configurations
+- Security policies are properly applied
+- Network connectivity works as expected
+- Monitoring and logging are properly configured
+
 ```
 
-### 3.3 Technical Design
+**Expected Outcome**
+Kiro will generate validation tests to verify that the infrastructure has been deployed correctly and meets all requirements.
+
+## Exercise 6 - Implementation Phase 2 - Frontend
+
+### 6.1 Frontend Development
 ```
-Design the messaging architecture considering:
-- Real-time communication protocols (WebSocket, Server-Sent Events)
-- Message queuing and delivery guarantees
-- Data synchronization strategies
-- Push notification architecture
-- Local storage and caching
-- Cross-platform compatibility (iOS/Android)
+Based on our frontend specification, implement:
+
+- Responsive chat interface with proper accessibility
+- Real-time message display with proper error handling
+- Input validation and sanitization
+- Loading states and user feedback
+- Progressive enhancement for better user experience
+- Proper error boundaries and fallback UI
+
 ```
+**Expected Outcome**
+Kiro will generate the frontend code for the chatbot application, including HTML, CSS, and JavaScript/TypeScript files that implement the UI/UX specification
 
-### 3.4 Implementation Strategy
+### 6.2 Frontend Testing
 ```
-Plan the implementation with focus on:
-- Incremental rollout strategy
-- A/B testing for UX features
-- Performance monitoring and optimization
-- Backward compatibility considerations
-- App store deployment process
-```
+Implement comprehensive frontend testing:
 
-**Learning Goals:**
-- Mobile-specific requirement considerations
-- Real-time system design
-- Cross-platform development planning
-- Performance and UX optimization
-
----
-
-## Exercise 4 - Legacy System Migration
-
-**Scenario:** Migrate a monolithic application to microservices architecture.
-
-### 4.1 Setup
-Create a new spec called `LegacyMigrationSpec`
-
-### 4.2 Current State Analysis
-```
-Document the current monolithic system including:
-- Existing functionality and business logic
-- Current architecture and dependencies
-- Performance bottlenecks and pain points
-- Data models and database structure
-- Integration points with external systems
-
-Then specify requirements for the target microservices architecture.
+- Unit tests for utility functions
+- Integration tests for API communication
+- End-to-end tests for user workflows
+- Accessibility testing with automated tools
+- Performance testing and optimization
 ```
 
-### 4.3 Migration Architecture
+**Expected Outcome**
+Kiro will generate test files for the frontend components and utilities, ensuring that the application meets all requirements and works correctly.
+
+## Exercise 7 - Implementation Phase 3 - Backend API
+
+### 7.1 API Implementation
 ```
-Design the migration strategy including:
-- Service decomposition strategy
-- Data migration and synchronization
-- API gateway and service mesh architecture
-- Monitoring and observability setup
-- Rollback and disaster recovery plans
+Based on our API specification, implement:
+
+- Lambda functions for chat endpoints
+- Input validation middleware
+- Error handling with proper HTTP status codes
+- Request/response logging
+- Rate limiting implementation
+- Health check endpoints
+```
+**Expected Outcome**
+Kiro will generate the backend Lambda functions that implement the API specification, including proper input validation, error handling, and logging. The implementation will follow RESTful API best practices and include all the endpoints defined in the API specification.
+
+### 7.2 Bedrock Integration
+```
+Implement Bedrock integration with:
+
+- Proper model selection and configuration
+- Request/response transformation
+- Error handling for Bedrock API calls
+- Cost optimization strategies
+- Response streaming if supported
 ```
 
-### 4.4 Phased Migration Plan
+**Expected Outcome**
+Kiro will implement the integration with Amazon Bedrock, configuring the appropriate AI model and handling all the communication between your Lambda functions and the Bedrock service. The implementation will include error handling, retries, and optimizations to ensure reliable and cost-effective operation.
+
+
+## Exercise 8 - Security Implementation
+
+### 8.1 Authentication and Authorization
 ```
-Create a detailed migration plan with:
-- Service extraction priority and dependencies
-- Data migration strategies
-- Testing approaches for each phase
-- Risk mitigation strategies
-- Success metrics and monitoring
+Implement user authentication system:
+
+- User registration and login functionality
+- JWT token management
+- Session handling and security
+- Password security best practices
+- Multi-factor authentication considerations
+
 ```
 
-**Learning Goals:**
-- Complex system analysis and documentation
-- Migration strategy planning
-- Risk assessment and mitigation
-- Microservices architecture design
+**Expected Outcome**
+Kiro will implement a complete authentication system that allows users to register, login, and securely access the chatbot. The implementation will include secure password handling (hashing, salting), JWT token generation and validation, and proper session management. The system will follow security best practices to protect user credentials and prevent common authentication vulnerabilities.
 
----
+### 8.2 Security Headers and Policies
+```
+Implement comprehensive security measures:
 
-## Workshop Tips
+- Content Security Policy (CSP) headers
+- CORS policies with proper origin validation
+- Rate limiting with Redis or DynamoDB
+- Input sanitization and validation
+- SQL injection and XSS prevention
+- Security monitoring and alerting
+```
 
-### Getting the Most from Each Exercise
-- **Start Simple:** Begin with basic requirements, then add complexity
-- **Iterate Frequently:** Use the decision points in the workflow to refine your specs
-- **Ask Questions:** Use Kiro to clarify requirements and explore alternatives
-- **Think End-to-End:** Consider the full user journey and system lifecycle
+**Expected Outcome**
+Kiro will implement various security measures to protect the application from common web vulnerabilities. This includes configuring security headers in CloudFront and API Gateway, implementing proper CORS policies, adding rate limiting to prevent abuse, and ensuring all user inputs are properly validated and sanitized. The implementation will also include monitoring and alerting for security-related events.After completing this exercise, your chatbot application will have enterprise-grade security features that protect both the infrastructure and the users. The security implementation will follow industry best practices and address the requirements specified in your security specification document.
 
-### Common Patterns to Practice
-- **EARS Notation:** Master the "WHEN...THE SYSTEM SHALL..." format
-- **Architecture Diagrams:** Practice describing system components and interactions
-- **Task Breakdown:** Learn to create actionable, measurable tasks
-- **File References:** Use `#[[file:...]]` to link related documentation
+## Exercise 9 -  Cleanup and Resource Management
 
-### Troubleshooting Your Specs
-- **Vague Requirements:** Ask Kiro to help make them more specific and testable
-- **Missing Edge Cases:** Review each requirement for error conditions and exceptions
-- **Unclear Tasks:** Ensure each task has clear acceptance criteria
-- **Architecture Gaps:** Verify all components and integrations are documented
+### 9.1 Cleanup and Resource Management
 
-### Advanced Techniques
-- **Reference External Files:** Use `#[[file:api/openapi.yaml]]` to link specifications
-- **Iterative Refinement:** Use the workflow decision points to improve your specs
-- **Stakeholder Reviews:** Share specs with team members for feedback
-- **Living Documentation:** Keep specs updated as implementation progresses
+```
+Create and execute cleanup procedures:
 
----
+- Document all deployed AWS resources
+- Create cleanup scripts for complete resource removal
+- Verify all resources are properly deleted
+- Document any persistent data that needs backup
+- Create re-deployment procedures for future use
+```
 
-## Next Steps
+**Expected Outcome**
+Kiro will generate a comprehensive inventory of all AWS resources deployed for your chatbot application, including S3 buckets, CloudFront distributions, API Gateway endpoints, Lambda functions, IAM roles, and any other resources. It will then create cleanup scripts (using AWS CDK, CloudFormation, or AWS CLI) to systematically remove these resources in the correct order to avoid dependency issues. The implementation will include verification steps to ensure all resources are properly deleted and documentation for any data that should be backed up before cleanup. Finally, Kiro will provide instructions for re-deploying the application in the future if needed.
 
-After completing these exercises, you'll have hands-on experience with:
-- Creating comprehensive requirements using EARS notation
-- Designing system architectures for different domains
-- Planning implementation with trackable tasks
-- Managing complex projects through specifications
+After completing this exercise, you'll have successfully cleaned up all AWS resources used by your chatbot application, preventing any unexpected charges. You'll also have documentation and scripts that make it easy to redeploy the application in the future if desired.
 
-**Continue Learning:**
-- Apply Kiro Specs to your real projects
-- Experiment with file references and external documentation
-- Practice collaborative spec development with your team
-- Explore advanced architectural patterns in your designs
-
-*Ready to transform your development process? Start with Exercise 1 and work your way through each scenario.* 🚀
