@@ -1,4 +1,4 @@
-# Kiro Spec Workshop: Hands-On Exercises
+# 🚀 Kiro Spec Workshop: Hands-On Exercises
 
 > **Master specification-driven development** through practical exercises that demonstrate real-world scenarios and build your expertise with Kiro Specs.
 
@@ -11,7 +11,7 @@ Kiro's Spec feature allows you to formalize the design and implementation proces
 This is a fully hands-on workshop. Through a series of exercises, you will design, develop, and deploy the same chatbot service as the vibe coding workshop, but using a more structured, specification-driven approach. By the end, you'll have a fully functional chatbot with text, image, and voice capabilities, secured with user authentication.
 
 
-## Exercise 1 - Creating Your First Spec
+##  🚀 Exercise 1 - Creating Your First Spec
 
 **Scenario:** Build a comprehensive specification for a serverless chatbot application before writing any code.
 
@@ -102,7 +102,7 @@ Review the generated spec document and refine it based on your specific needs. T
 
 ---
 
-## Exercise 2 - Infrastructure Specification
+##  🚀 Exercise 2 - Infrastructure Specification
 
 ### 2.1 AWS Resources Specification
 ```
@@ -135,7 +135,7 @@ Create a comprehensive security specification covering:
 **Expected Outcome**
 Kiro will generate a detailed security specification that addresses all aspects of application security, from frontend to backend.
 
-## Exercise 3 - Frontend Specification
+##  🚀 Exercise 3 - Frontend Specification
 
 ### 3.1 UI/UX Specification
 ```
@@ -165,7 +165,7 @@ Specify the technical implementation details:
 **Expected Outcome**
 Kiro will generate a detailed technical specification for the frontend implementation, including technology choices, build processes, and optimization strategies.
 
-## Exercise 4 - Backend API Specification
+##  🚀 Exercise 4 - Backend API Specification
 
 ### 4.1 API Specification
 ```
@@ -197,7 +197,7 @@ Create detailed specifications for each Lambda function:
 **Expected Outcome**
 Kiro will generate detailed specifications for each Lambda function in the system, including their purpose, inputs/outputs, and configuration requirements.
 
-## Exercise 5 -  Implementation Phase 1 - Infrastructure
+## 🚀 Exercise 5 -  Implementation Phase 1 - Infrastructure
 
 ### 5.1 Infrastructure as Code
 ```
@@ -229,7 +229,7 @@ Create infrastructure validation tests to ensure:
 **Expected Outcome**
 Kiro will generate validation tests to verify that the infrastructure has been deployed correctly and meets all requirements.
 
-## Exercise 6 - Implementation Phase 2 - Frontend
+##  🚀 Exercise 6 - Implementation Phase 2 - Frontend
 
 ### 6.1 Frontend Development
 ```
@@ -260,7 +260,7 @@ Implement comprehensive frontend testing:
 **Expected Outcome**
 Kiro will generate test files for the frontend components and utilities, ensuring that the application meets all requirements and works correctly.
 
-## Exercise 7 - Implementation Phase 3 - Backend API
+##  🚀 Exercise 7 - Implementation Phase 3 - Backend API
 
 ### 7.1 API Implementation
 ```
@@ -291,7 +291,7 @@ Implement Bedrock integration with:
 Kiro will implement the integration with Amazon Bedrock, configuring the appropriate AI model and handling all the communication between your Lambda functions and the Bedrock service. The implementation will include error handling, retries, and optimizations to ensure reliable and cost-effective operation.
 
 
-## Exercise 8 - Security Implementation
+##  🚀 Exercise 8 - Security Implementation
 
 ### 8.1 Authentication and Authorization
 ```
@@ -323,7 +323,7 @@ Implement comprehensive security measures:
 **Expected Outcome**
 Kiro will implement various security measures to protect the application from common web vulnerabilities. This includes configuring security headers in CloudFront and API Gateway, implementing proper CORS policies, adding rate limiting to prevent abuse, and ensuring all user inputs are properly validated and sanitized. The implementation will also include monitoring and alerting for security-related events.After completing this exercise, your chatbot application will have enterprise-grade security features that protect both the infrastructure and the users. The security implementation will follow industry best practices and address the requirements specified in your security specification document.
 
-## Exercise 9 -  Cleanup and Resource Management
+## 🚀 Exercise 9 -  Cleanup and Resource Management
 
 ```
 Create and execute cleanup procedures:
