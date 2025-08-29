@@ -73,6 +73,132 @@ A detail comparison of two approaches :
 <img width="716" height="377" alt="image" src="https://github.com/user-attachments/assets/f689340f-5d72-4f04-bca4-491c8df6fb02" />
 
 
+## 🌟 Why Choose Kiro? Unique Features That Set Us Apart
+
+Kiro isn't just another AI coding assistant. We've built unique features that transform how you develop software, making your workflow more intelligent, automated, and collaborative.
+
+### 🎯 Steering: Your Team's Knowledge, Always Available
+
+**What is Steering?**
+Steering gives Kiro persistent knowledge about your project through markdown files in `.kiro/steering/`. Instead of explaining your conventions in every chat, steering files ensure Kiro consistently follows your established patterns, libraries, and standards.
+
+**Key Benefits:**
+- **Consistent Code Generation**: Every component, API endpoint, or test follows your team's established patterns and conventions
+- **Reduced Repetition**: No need to explain project standards in each conversation. Kiro remembers your preferences
+- **Team Alignment**: All developers work with the same standards, whether they're new to the project or seasoned contributors
+- **Scalable Project Knowledge**: Documentation that grows with your codebase, capturing decisions and patterns as your project evolves
+
+**Flexible Inclusion Modes:**
+- **Always Included**: Core standards loaded into every interaction (default for foundational files)
+- **Conditional Inclusion**: Automatically included when working with specific file patterns (e.g., `*.tsx` for React components)
+- **Manual Inclusion**: Available on-demand by referencing `#steering-file-name` in chat
+
+**Foundation Files Kiro Can Generate:**
+- **Product Overview** (`product.md`): Defines your product's purpose, target users, and business objectives
+- **Technology Stack** (`tech.md`): Documents frameworks, libraries, and technical constraints
+- **Project Structure** (`structure.md`): Outlines file organization, naming conventions, and architectural decisions
+
+**Real-World Example:**
+```markdown
+# .kiro/steering/api-standards.md
+---
+inclusion: conditional
+fileMatchPattern: "app/api/**/*"
+---
+
+Always use our REST API conventions:
+- Use kebab-case for endpoints
+- Include proper error handling with our standard error format
+- Reference our OpenAPI spec: #[[file:api/openapi.yaml]]
+- Follow our authentication patterns using JWT tokens
+```
+
+### 🔗 Agent Hooks: Automation That Thinks
+
+**What are Agent Hooks?**
+Agent Hooks are powerful automation tools that streamline your development workflow by automatically executing predefined agent actions when specific events occur in your IDE. With hooks, you eliminate the need to manually request routine tasks and ensure consistency across your codebase.
+
+**How Agent Hooks Work:**
+1. **Event Detection**: The system monitors for specific events in your IDE (saving files, creating files, deleting files)
+2. **Prompt Execution**: When an event occurs, a predefined prompt is sent to the agent
+3. **Automated Action**: The agent processes the prompt and performs the requested actions
+
+**Key Benefits:**
+- **Maintain Consistent Code Quality**: Automatically enforce standards across your codebase
+- **Prevent Security Vulnerabilities**: Automated security checks and fixes
+- **Reduce Manual Overhead**: Eliminate repetitive tasks from your workflow
+- **Standardize Team Processes**: Ensure all team members follow the same automated workflows
+- **Create Faster Development Cycles**: Focus on building while hooks handle routine maintenance
+
+**Setting Up Hooks:**
+- **Explorer View**: Navigate to Agent Hooks section in Kiro panel, click + to create new hooks
+- **Command Palette**: Use `Cmd + Shift + P` → "Kiro: Open Kiro Hook UI"
+- **Natural Language**: Define hook workflows using simple, natural language descriptions
+
+**Real-World Automation Examples:**
+- **Code Quality**: Automatically format code, update imports, and fix linting issues on file save
+- **Test Maintenance**: Update unit tests when functions change, ensure test coverage remains complete
+- **Documentation Sync**: Keep API docs, README files, and code comments synchronized automatically
+- **Security Compliance**: Scan for vulnerabilities, update dependencies, validate input sanitization
+
+### 🔌 MCP (Model Context Protocol): Extend Kiro's Capabilities
+
+**What is MCP?**
+Model Context Protocol (MCP) extends Kiro's capabilities by connecting to specialized servers that provide additional tools and context. MCP is a protocol that allows Kiro to communicate with external servers to access specialized tools and information.
+
+**What MCP Enables:**
+- **Access Specialized Knowledge Bases**: Connect to documentation systems, wikis, and knowledge repositories
+- **Integrate with External Services**: Work with APIs, databases, cloud services, and third-party tools
+- **Extend with Domain-Specific Tools**: Add capabilities tailored to your specific industry or workflow
+- **Create Custom Tools**: Build MCP servers for your organization's unique requirements
+
+**Easy Setup and Management:**
+- **Configuration**: Simple JSON configuration files (workspace or user-level)
+- **MCP Servers Tab**: Visual interface in Kiro panel showing all configured servers and connection status
+- **Tool Discovery**: Click any tool name to insert placeholder prompts in chat
+- **Auto-Approval**: Configure trusted tools to run without manual approval
+
+**Popular MCP Server Examples:**
+- **AWS Documentation**: Search and access AWS documentation directly within Kiro
+- **Database Connectors**: Query databases, update schemas, generate migrations
+- **File System Tools**: Advanced file operations, search, and manipulation
+- **Web Browsing**: Fetch web content, search the internet, access documentation sites
+- **API Integration**: Connect to REST APIs, GraphQL endpoints, and web services
+
+**Configuration Example:**
+```json
+{
+  "mcpServers": {
+    "aws-docs": {
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "disabled": false,
+      "autoApprove": ["search_aws_docs"]
+    }
+  }
+}
+```
+
+**Troubleshooting Support:**
+- **MCP Logs**: Dedicated log output in Kiro panel for debugging connection issues
+- **Connection Status**: Visual indicators showing server health and availability
+- **Error Handling**: Clear error messages and solutions for common configuration problems
+
+### 🚀 The Kiro Advantage: Putting It All Together
+
+**Intelligent Context Awareness**
+Unlike other AI assistants that work in isolation, Kiro understands your entire development ecosystem through steering, hooks, and MCP integrations.
+
+**Team-Centric Development**
+Kiro scales your team's expertise, ensuring everyone benefits from your collective knowledge and maintains consistency across projects.
+
+**Proactive Development**
+Instead of just responding to requests, Kiro anticipates needs and automates routine tasks, letting you focus on creative problem-solving.
+
+**Extensible Architecture**
+As your needs evolve, Kiro grows with you through customizable steering rules, intelligent hooks, and expandable MCP connections.
+
+---
 ### 🚀 Other Core Capabilities
 
 🧠 **Intelligent Conversational Development**: Describe requirements in natural language, Kiro understands and implements your ideas  
@@ -84,18 +210,6 @@ A detail comparison of two approaches :
 🔒 **Enterprise-Grade Security**: Code privacy protection and compliance support  
 🤖 **Autopilot Mode**: Automatically execute complex development task sequences
 
-## 🎯 Why Choose Kiro?
-
-### Proven Efficiency Improvements
-
-According to official Kiro data and user feedback:
-
-🚀 **10x Development Efficiency Boost**: Reduce hours of work to minutes  
-📈 **Lower Technical Barriers**: Even complex AWS architectures can be easily implemented  
-✨ **Improve Code Quality**: AI-assisted code review and optimization suggestions  
-📚 **Continuous Learning Growth**: Learn new technologies and best practices during implementation  
-🤝 **Enhanced Team Collaboration**: Unified development standards and knowledge sharing  
-💰 **Cost-Effectiveness Optimization**: Intelligent resource allocation and cost control
 
 ## 🚀 Experiment Overview
 
