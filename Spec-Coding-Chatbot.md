@@ -1,254 +1,274 @@
-Web Shooting Game with AWS Deployment
+# Kiro Spec Mode: Your Blueprint for Better Software
 
-> **Welcome to Kiro!** In this hands-on lab, you'll learn how to use Kiro's AI capabilities to build applications quickly and efficiently.
+> **Transform vague ideas into production-ready code** with structured specifications that bridge the gap between product requirements and technical implementation.
 
-## What You'll Build
+## Why Kiro Specs?
 
-A fully functional web shooting game featuring:
-- **Enemy health bars** and visual feedback
-- **Power-up systems** (Triple Shot, Rapid Fire, Shield)
-- **Boss stages** that trigger at score milestones
-- **AWS serverless deployment** with CloudFront distribution
+Building software without a clear plan leads to endless revisions, scope creep, and frustrated teams. Kiro Specs solve this by creating a structured workflow that ensures alignment from concept to deployment.
 
----
+**The Problem:**
+- 🔄 Endless back-and-forth between product and engineering
+- 📝 Vague requirements that lead to wrong implementations  
+- 🐛 Missing edge cases discovered too late
+- ⏰ Development iterations that could have been avoided
 
-## 🎯 Learning Goals
-
-By the end of this lab, you'll know how to:
-- ✅ Build complex interactive web games with Kiro
-- ✅ Deploy to AWS serverless architecture
-- ✅ Manage and clean up AWS resources properly
-
-## 📋 What You Need
-
-Before starting, make sure you have:
-- **AWS Account** with full permissions
-- **AWS CLI** configured on your machine
-- **Kiro IDE** installed and running
+**The Solution:**
+- ✅ **Structured requirements** in testable EARS notation
+- 🏗️ **Technical design** with architecture diagrams
+- 📋 **Implementation roadmap** with trackable tasks
+- 🎯 **Clear acceptance criteria** everyone understands
 
 ---
 
-## � Let'rs Get Started
+## How Kiro Specs Work
 
-### Step 1: Set Up Your Project
+Specs bridge the gap between conceptual product requirements and technical implementation details, ensuring alignment and reducing development iterations. Kiro generates three key files that form the foundation of each specification:
 
-1. **Create a new folder** called `MyShootingGame` on your computer
-2. **Open Kiro IDE** and click "Open a project"
-3. **Select your folder** - Kiro will initialize the workspace
+### 📋 requirements.md
+**What it does:** Captures user stories and acceptance criteria in structured EARS notation
 
-### Step 2: Choose Your Build Mode
+The requirements.md file is written in the form of user stories with acceptance criteria in EARS notation - the way you wish your PM would give you requirements!
 
-1. Navigate to **"Let's build"** in Kiro
-2. Choose **"Vibe"** mode (chat first, build later)
-3. Set model to **"Claude Sonnet 4"** 
-4. **Enable Autopilot** for autonomous file modifications
-
-> **Why Vibe mode?** It's perfect for iterative development where you explore ideas as you build.
-
-## 🎮 Building Your Game (Step by Step)
-
-### Step 3: Create the Basic Game
-
-**Copy and paste this prompt into Kiro:**
-
+**EARS (Easy Approach to Requirements Syntax) format:**
 ```
-Please help me to build a web-base shooting game.
+WHEN [condition/event] THE SYSTEM SHALL [expected behavior]
 ```
 
-**What you'll get:** A basic web game with shooting mechanics and enemy systems.
+**Example:**
+```
+WHEN a user submits a form with invalid data 
+THE SYSTEM SHALL display validation errors next to the relevant fields
+
+WHEN a user successfully logs in 
+THE SYSTEM SHALL redirect them to their dashboard within 2 seconds
+```
+
+**Why EARS notation works:**
+- **Clarity:** Requirements are unambiguous and easy to understand
+- **Testability:** Each requirement can be directly translated into test cases
+- **Traceability:** Individual requirements can be tracked through implementation
+- **Completeness:** The format encourages thinking through all conditions and behaviors
+
+### 🏗️ design.md  
+**What it does:** Documents technical architecture, sequence diagrams, and implementation considerations
+
+This is where you capture the big picture of how the system will work, including components and their interactions. Kiro's specs offer a structured approach to design documentation, making it easier to understand and collaborate on complex systems.
+
+**Typical sections include:**
+- Architecture overview
+- Data flow diagrams
+- Interface specifications
+- Data models
+- Error handling strategies
+- Unit testing strategy
+
+**Benefits:**
+- Technical alignment across teams
+- Implementation guidance
+- Living architecture documentation
+- Collaboration on complex systems
+
+### ✅ tasks.md
+**What it does:** Provides detailed implementation plan with discrete, trackable tasks and sub-tasks
+
+Each task is clearly defined with a clear description, expected outcome, and any necessary resources or dependencies. Kiro provides a task execution interface for tasks.md files that displays real-time status updates.
+
+**Key features:**
+- Tasks updated as in-progress or completed
+- Real-time status tracking
+- Efficient progress monitoring
+- Up-to-date development status view
+
+**Benefits:**
+- Structured implementation approach
+- Progress visibility for stakeholders
+- Task dependency management
+- Team coordination and accountability
 
 ---
 
-### Step 4: Improve Controls
+## The Spec Workflow
 
-**Your next prompt:**
+The workflow follows a logical progression with decision points between phases, ensuring each step is properly completed before moving to the next:
 
 ```
-Use keyboard to control spaceship is hard to target the enemies. Please help me to add the cursor mode. Also, please follow below rules:
-- With cursor mode, please do not add Y axis direction movement, and the bullet on can shoot straight forward.
-- Do not add auto-aim function.
-- With cursor mode, please add a aim dot to represent cursor position.
+💡 Start a spec → 📋 requirements.md → 🏗️ design.md → ✅ Implementation → 🚀 Execution
+                      ↓ Happy?           ↓ Happy?
+                   Edit/Request      Edit/Request
+                     changes          changes
 ```
 
-**What this adds:**
-- 🎯 **Dual control modes:** WASD + spacebar OR mouse/touch controls
-- 🎯 **Aiming dot** for better targeting
-- 🎯 **No auto-aim** - skill-based gameplay
+### Requirements Phase
+**Focus:** Define user stories and acceptance criteria in structured EARS notation
+
+- Transform vague feature requests into well-structured requirements
+- Use EARS format for clarity and testability
+- Ensure requirements are unambiguous and complete
+- **Decision point:** Are requirements clear and complete?
+- **If not:** Edit and refine until stakeholders agree
+
+### Design Phase  
+**Focus:** Document technical architecture, sequence diagrams, and implementation considerations
+
+- Capture the big picture of system architecture
+- Document component interactions and data flow
+- Plan interfaces, data models, and error handling
+- Create sequence diagrams for complex workflows
+- **Decision point:** Is the technical approach sound and feasible?
+- **If not:** Revise design and request changes
+
+### Implementation Planning
+**Focus:** Break down work into discrete, trackable tasks with clear descriptions and outcomes
+
+- Convert design into actionable development tasks
+- Define clear "done" criteria for each task
+- Identify dependencies and prerequisites
+- Organize tasks for efficient execution
+- **Outcome:** Ready-to-execute implementation plan
+
+### Execution Phase
+**Focus:** Track progress as tasks are completed, with ability to update and refine the spec as needed
+
+- Real-time task status updates (in-progress, completed)
+- Monitor development progress
+- Adapt spec as requirements evolve
+- Maintain alignment with original goals
+- **Result:** Delivered feature that matches specifications
 
 ---
 
-### Step 5: Add Visual Feedback
+## Getting Started with Specs
 
-**Your next prompt:**
-
+### 1. Create a New Spec
 ```
-Please help me add a health bar on enemies to understand how many time left to take down it. Meanwhile, please add the how-to-play on the page
+💡 Idea for feature 'user-authentication'
+    ↓
+📝 Open spec session in chat
+    ↓  
+➕ Click '+' in spec pane
+    ↓
+📁 .kiro/specs/user-authentication/
+   ├── requirements.md
+   ├── design.md  
+   └── tasks.md
 ```
 
-**What this adds:**
-- ❤️ **Enemy health bars** - see damage progress
-- 📖 **How-to-play instructions** - built into the page
+Kiro automatically generates the three foundational files when you create a new spec, giving you a structured starting point for any feature development.
+
+### 2. Follow the Structured Workflow
+**Start with Requirements (requirements.md)**
+- Define what you're building in clear user stories
+- Use EARS notation for testable acceptance criteria
+- Get stakeholder alignment before moving forward
+- Transform vague ideas into structured specifications
+
+**Move to Design (design.md)**
+- Document technical architecture and approach
+- Create sequence diagrams for complex interactions
+- Plan data models, interfaces, and error handling
+- Ensure technical feasibility and team alignment
+
+**Plan Implementation (tasks.md)**
+- Break design into discrete, actionable tasks
+- Define clear outcomes and success criteria
+- Identify dependencies and execution order
+- Create trackable milestones for progress monitoring
+
+**Execute with Confidence**
+- Use Kiro's task execution interface for real-time tracking
+- Update task status as work progresses
+- Maintain spec as living documentation
+- Deliver features that match original specifications
+
+### 3. Leverage Team Collaboration
+**Product Teams:** Review requirements in familiar user story format with clear acceptance criteria
+**Engineering Teams:** Get detailed technical specifications and architecture guidance  
+**Project Managers:** Track progress with granular task visibility and real-time updates
+**QA Teams:** Use structured requirements for comprehensive test planning
 
 ---
 
-### Step 6: Create Start Screen
+## Real-World Benefits
 
-**Your next prompt:**
+### For Product Teams
+- 📝 **Clear requirements** that eliminate guesswork
+- 🎯 **Testable acceptance criteria** for every feature
+- � ***Reduced iterations** through upfront alignment
+- � **Purogress visibility** throughout development
 
-```
-Create a start game page.
-```
+### For Engineering Teams  
+- 🏗️ **Technical clarity** before coding begins
+- 📐 **Architecture documentation** that stays current
+- ✅ **Organized task management** with clear outcomes
+- 🧪 **Built-in testing strategy** from requirements
 
-**What this adds:**
-- 🏁 **Professional start screen**
-- ⚙️ **Control method selection**
-
----
-
-### Step 7: Power-Up System
-
-**Your next prompt:**
-
-```
-I would like to add some random dropped items to temporarily power up myself. Such as shooting more fast, or shooting more wide.
-```
-
-**What this adds:**
-- 🚀 **Triple Shot** - spread fire
-- ⚡ **Rapid Fire** - faster shooting
-- 🛡️ **Shield** - temporary protection
-- 🎲 **Random drops** from defeated enemies
+### For Project Management
+- 📈 **Real-time progress tracking** 
+- 🎯 **Clear deliverables** and milestones
+- 🔍 **Dependency visibility** to avoid blockers
+- 📋 **Scope management** with structured requirements
 
 ---
 
-### Step 8: Boss Battles
+## Advanced Features
 
-**Your next prompt:**
+### File References in Specs
+Spec files support including references to additional files using the syntax `#[[file:<relative_file_name>]]`. This powerful feature allows you to:
 
+- **Reference API specifications:** Include OpenAPI specs to influence implementation
+- **Link GraphQL schemas:** Reference GraphQL definitions for consistent development  
+- **Include configuration files:** Reference config files for deployment specifications
+- **Connect documentation:** Link to existing technical documentation
+
+**Example usage:**
+```markdown
+The API should follow the specification defined in #[[file:api/openapi.yaml]]
+
+Database schema is documented in #[[file:docs/database-schema.md]]
 ```
-When the score reach specific points, I would like to have a boss stage. Once the boss is eliminated, return to normal stage to get more points and wait next boss stage.
-```
 
-**What this adds:**
-- 👹 **Boss appears every 200 points**
-- 🔥 **Escalating difficulty**
-- 🏆 **Epic boss battle mechanics**
+This creates low-friction integration between your specs and existing project documentation.
 
 ---
 
-### Step 9: Deploy to AWS
+## Best Practices
 
-**Your deployment prompt:**
+### Writing Great Requirements
+- Use EARS notation for consistency and clarity
+- Focus on user value and measurable outcomes
+- Include edge cases and error scenarios
+- Make every requirement testable and traceable
+- Transform vague requests into structured specifications
 
-```
-Please help me deploy to my AWS Account with serverless architecture, make sure the S3 bucket not public read and can only go through Cloudfront. Please deploy
-```
+### Effective Design Documentation
+- Start with high-level architecture overview
+- Include sequence diagrams for complex interactions
+- Document data models, interfaces, and APIs
+- Consider scalability, performance, and security
+- Reference external specifications using file links
 
-**What this does:**
-- ☁️ **Serverless architecture** (S3 + CloudFront)
-- 🔒 **Secure setup** - no public S3 access
-- 🚀 **Automated deployment**
-
-> **Important:** All AWS CLI commands will include `--no-paginate` and `--no-cli-pager` flags
-
----
-
-### Step 10: Clean Up Resources
-
-**When you're done testing:**
-
-```
-Please help me to terminate the related resources from my AWS account.
-```
-
-**Why this matters:** Prevents unexpected AWS charges!
+### Smart Task Planning
+- Keep tasks focused and discrete
+- Define clear "done" criteria for each task
+- Identify dependencies and execution order
+- Estimate effort realistically
+- Use Kiro's task execution interface for tracking
 
 ---
 
-## 📁 What You'll End Up With
+## Common Use Cases
 
-Your final project structure:
+### New Feature Development
+Perfect for building complex features that require coordination between multiple teams and systems.
 
-```
-MyShootingGame/
-├── 🎮 src/
-│   ├── index.html          # Main game
-│   ├── game.js             # Game logic  
-│   ├── styles.css          # Styling
-│   └── instructions.html   # How to play
-├── ☁️ infrastructure/
-│   ├── serverless.yml      # AWS config
-│   └── deploy.sh           # Deploy script
-└── 📖 README.md            # Documentation
-```
+### System Refactoring
+Use specs to document current state, design future state, and plan migration tasks.
 
-## 🏗️ Your AWS Setup
+### API Development
+Capture requirements, design endpoints, and plan implementation with clear documentation.
 
-**What gets deployed:**
-- 📦 **S3 Bucket** - hosts your game files (private)
-- 🌐 **CloudFront** - serves your game globally
-- 🔒 **Secure access** - only through CloudFront URL
-
-## ✅ Testing Your Deployment
-
-After deployment, check that:
-- ✅ Game loads from CloudFront URL
-- ✅ All features work (shooting, power-ups, bosses)
-- ✅ No direct S3 access (security check)
-- ✅ Costs stay reasonable
+### Integration Projects
+Document requirements, design integration architecture, and track implementation across systems.
 
 ---
 
-## 💡 Pro Tips
-
-### Working with Kiro
-- 🔄 **Build incrementally** - one feature at a time
-- 🧪 **Test before moving on** - make sure each step works
-- 📝 **Be specific** - describe exactly what you want
-- 🔁 **Iterate freely** - use Kiro's strengths to refine your game
-
-### Game Development
-- ⚡ **Keep it smooth** - optimize your game loop
-- 👀 **Visual feedback** - players need to see what's happening  
-- 📈 **Balanced difficulty** - not too easy, not impossible
-- � **rMulti-device support** - works on desktop and mobile
-
----
-
-## 🐛 If Something Goes Wrong
-
-### Game Issues
-| Problem | Solution |
-|---------|----------|
-| 🐌 Game stutters | Check game loop efficiency |
-| 🎮 Controls don't work | Review input handling code |
-| 💊 Power-ups broken | Check state management |
-
-### AWS Issues  
-| Problem | Solution |
-|---------|----------|
-| 🚫 Deployment fails | Verify AWS permissions |
-| 🌐 Game won't load | Check S3/CloudFront config |
-| 💰 Unexpected charges | Review all AWS services |
-
-### Get Help from Kiro
-Ask Kiro: *"Please help me check if there are any missed AWS resources"*
-
----
-
-## 🏆 You're Done When...
-
-✅ **Game works perfectly** - shooting, enemies, power-ups, bosses  
-✅ **Controls feel great** - both keyboard and mouse/touch  
-✅ **Instructions are clear** - players know how to play  
-✅ **Boss battles trigger** - every 200 points  
-✅ **AWS deployment successful** - accessible via CloudFront  
-✅ **Resources cleaned up** - no surprise bills  
-
-## 🎯 See It In Action
-
-**Live example:** https://dvru9fepx5b2b.cloudfront.net
-
----
-
-*Ready to build something awesome? Let's go! 🚀*
