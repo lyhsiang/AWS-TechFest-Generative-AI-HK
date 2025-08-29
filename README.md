@@ -68,6 +68,11 @@ Kiro offers two different development modes for different development scenarios:
 - Automatically generate detailed technical specification documents
 - Support complex project management and tracking
 
+A detail comparison of two approaches :
+
+<img width="716" height="377" alt="image" src="https://github.com/user-attachments/assets/f689340f-5d72-4f04-bca4-491c8df6fb02" />
+
+
 ### 🚀 Other Core Capabilities
 
 🧠 **Intelligent Conversational Development**: Describe requirements in natural language, Kiro understands and implements your ideas  
