@@ -325,8 +325,6 @@ Kiro will implement various security measures to protect the application from co
 
 ## Exercise 9 -  Cleanup and Resource Management
 
-### 9.1 Cleanup and Resource Management
-
 ```
 Create and execute cleanup procedures:
 
@@ -342,3 +340,25 @@ Kiro will generate a comprehensive inventory of all AWS resources deployed for y
 
 After completing this exercise, you'll have successfully cleaned up all AWS resources used by your chatbot application, preventing any unexpected charges. You'll also have documentation and scripts that make it easy to redeploy the application in the future if desired.
 
+
+## Comparing Spec vs Vibe Coding
+
+After completing all exercises in this workshop, take some time to reflect on the differences between spec and vibe coding approaches:
+
+### Advantages of Spec Coding:
+
+* Better documentation and maintainability
+* More predictable development process
+* Easier to review and validate requirements
+* Better suited for complex, enterprise applications
+* Facilitates team collaboration and knowledge sharing
+
+### When to Use Each Approach:
+
+* Use Spec Coding for: Complex applications, team projects, enterprise software, long-term maintenance
+* Use Vibe Coding for: Prototypes, simple applications, exploratory development, quick iterations
+
+### Final Remarks
+Spec coding with Kiro provides a more structured approach to AI-assisted development. While it requires more upfront planning, it results in better-documented, more maintainable, and more predictable software development processes.
+
+The specifications you create become living documents that can be updated and refined as requirements change, making your development process more agile and responsive to changing needs. Consider using spec coding for your next complex project where documentation, maintainability, and team collaboration are important factors.
