@@ -107,9 +107,9 @@ Model Context Protocol (MCP) extends Kiro's capabilities by connecting to specia
 #### 4.2 Modify the mcp.json file to add the MCP server
 
 In this workshop, we will add: 
-- AWS Documentation MCP Server: This MCP server provides tools to access AWS documentation, search for content, and get recommendations.
-- AWS Diagram MCP Server: This MCP server that seamlessly creates diagrams using the Python diagrams package DSL. This server allows you to generate AWS diagrams, sequence diagrams, flow diagrams, and class diagrams using Python code.
-- AWS CDK MCP Server: MCP server for AWS Cloud Development Kit (CDK) best practices, infrastructure as code patterns, and security compliance with CDK Nag.
+- **AWS Documentation MCP Server**: This MCP server provides tools to access AWS documentation, search for content, and get recommendations.
+- **AWS Diagram MCP Server**: This MCP server that seamlessly creates diagrams using the Python diagrams package DSL. This server allows you to generate AWS diagrams, sequence diagrams, flow diagrams, and class diagrams using Python code.
+- **AWS CDK MCP Server**: MCP server for AWS Cloud Development Kit (CDK) best practices, infrastructure as code patterns, and security compliance with CDK Nag.
 
 For more AWS provided MCP, please refer this [document](https://awslabs.github.io/mcp/).
 
@@ -160,6 +160,29 @@ For more AWS provided MCP, please refer this [document](https://awslabs.github.i
 }
 
 ```
+
+##  🚀 Exercise 5 - Add Hooks in Kiro 
+
+Agent Hooks are powerful automation tools that streamline your development workflow by automatically executing predefined agent actions when specific events occur in your IDE. With hooks, you eliminate the need to manually request routine tasks and ensure consistency across your codebase.
+
+#### 4.1 Click "+" on AGENT HOOKS to add new hooks
+
+
+<img width="393" height="731" alt="image" src="https://github.com/user-attachments/assets/22af98c2-f7e8-470c-9cf6-ec695a711f30" />
+
+
+#### 4.2 Describe the hood using natural language
+
+We want agent hooks to help us monitoring the CDK resource files change, and keep generating the AWS service diagram by using AWS Diagram MCP Server.
+
+```
+Monitors CDK resource files for AWS service changes and automatically generates or updates AWS service diagrams using the Python diagrams package DSL.
+```
+
+After the hook create complete and CDK resource files have change, you should see the similiar diagram as following example:
+
+<img width="1904" height="1940" alt="image" src="https://github.com/user-attachments/assets/b619e7e0-d667-40a5-8961-4ebd9aa2661b" />
+
 
 QQQQQQQQQQQQQQQQQQQQQQ
 
