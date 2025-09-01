@@ -77,7 +77,7 @@ Create a more comprehensive modern web-based shooting application with following
 
 1) A clear introduction page about how to play the game
 2) A healthy bar or status of enemies for user to understand how many time left to take it down 
-3) Allow user to select different themes and character, let's make 3 different themes and 3 different spaceship please refer to  Masked Rider themes 2) ultra man 3) Godzilla.
+3) Allow user to select different themes and character, let's make 3 different themes and 3 different spaceship please refer to  Masked Rider themes 2) ultraman 3) Godzilla.
 4) Implement a power-up system , add some random items temporarily power up the spaceship. Such as shooting more fast, or shooting more wide, please create 6 different items, the more special the better, also include explanation of the power up items
 
 ```
