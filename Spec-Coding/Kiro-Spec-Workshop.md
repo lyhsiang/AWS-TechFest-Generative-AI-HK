@@ -73,17 +73,50 @@ Steering gives Kiro persistent knowledge about your project through markdown fil
 
 <img width="966" height="661" alt="image" src="https://github.com/user-attachments/assets/6a4647ee-9a60-4f14-b1f7-f1e837ad0e1a" />
 
-### 1.1 Review the outputs markdown file from Agent Steering 
+### 1.2 Review the outputs markdown file from Agent Steering to make update if need
+
+Product Overview (product.md): Defines your product's purpose, target users, and business objectives
+
+Technology Stack (tech.md): Documents frameworks, libraries, and technical constraints
+
+Project Structure (structure.md): Outlines file organization, naming conventions, and architectural decisions
 
 <img width="908" height="669" alt="image" src="https://github.com/user-attachments/assets/1ab7adb6-1f59-4a2d-ba03-fef8ea563160" />
 
-##  🚀 Exercise 2 - Specs implementation with more comprehensive requirements for this application 
 
+##  🚀 Exercise 2 - Use Specs feature with with more comprehensive and implement requirements for this application 
 
+### 2.1 Go to Specs and click "+" asking Kiro to help you create a detailed requirements specification 
 
-Start by asking Kiro to help you create a detailed requirements specification:
+<img width="317" height="386" alt="image" src="https://github.com/user-attachments/assets/13e57958-a17e-47b3-a60e-2a85bed8c1d7" />
 
 ```
+
+Create a more comprehensive modern web-based shooting application with following high-level requirements: 
+1) A clear page about how to play in the beginning  
+2) Include a clear healthy bar or status of enemies for user to understand how many time left to take it down, 
+3) allow user to select different themes and character, let's make 3 different themes and 3 different spaceship please refer to  a) Masked Rider themes b) ultraman c) Godzilla. 
+4) implement a power-up system , add some random items temporarily power up myself. Such as shooting more fast, or shooting more wide, please create 10 different items, the more special the better
+```
+
+### 2.1 Review the Requirements ( requirements.md ) provide by Kiro 
+
+<img width="731" height="630" alt="image" src="https://github.com/user-attachments/assets/b024f8a0-5387-44a3-a9d8-b55adbf6362d" />
+
+### 2.2 Move to Design phase and review design or design.md 
+<img width="635" height="434" alt="image" src="https://github.com/user-attachments/assets/87efa607-f6d5-4113-9102-037855d1dc6b" />
+
+
+### 2.3 Start implementation plan , review the Tasklist or tasks.md 
+<img width="611" height="418" alt="image" src="https://github.com/user-attachments/assets/e2446220-7e17-4e67-a53c-f182cf0f11aa" />
+
+
+### 2.4 Start Task by one click
+
+<img width="568" height="332" alt="image" src="https://github.com/user-attachments/assets/3a3f912d-fe8d-4e63-b7d1-5ff21de23e4e" />
+
+```
+
 Create a comprehensive requirements specification for a serverless chatbot application with the following high-level requirements:
 
 - Frontend: CloudFront distribution serving a static website
