@@ -11,8 +11,6 @@ This is a fully hands-on workshop. Through a series of exercises, you will desig
 ### Setup
 Create a folder named `MyShootingGame` and open it in Kiro. Instead of starting with vibe coding, we'll create a comprehensive specification first.
 
-In the Let's build page, select **Spec** instead of Vibe. This will open the spec creation interface.
-
 ### 📋 Prerequisites
 
 - Installed and running Kiro IDE
@@ -52,7 +50,26 @@ Please help me to build a web-base shooting game and deploy to local
 
 ```
 
-##  🚀 Exercise 2 - Use Specs coding for more comprehensive implementation 
+##  🚀 Exercise 2 - Generate Steering document in Kiro 
+
+Steering gives Kiro persistent knowledge about your project through markdown files in .kiro/steering/. Instead of explaining your conventions in every chat, steering files ensure Kiro consistently follows your established patterns, libraries, and standards.
+
+#### 2.1 Click Generate Steering Docs
+
+<img width="966" height="661" alt="image" src="https://github.com/user-attachments/assets/6a4647ee-9a60-4f14-b1f7-f1e837ad0e1a" />
+
+#### 2.2 Review the outputs markdown file from Agent Steering to make update if need
+
+- Product Overview (product.md): Defines your product's purpose, target users, and business objectives
+
+- Technology Stack (tech.md): Documents frameworks, libraries, and technical constraints
+
+- Project Structure (structure.md): Outlines file organization, naming conventions, and architectural decisions
+
+<img width="908" height="669" alt="image" src="https://github.com/user-attachments/assets/1ab7adb6-1f59-4a2d-ba03-fef8ea563160" />
+
+
+##  🚀 Exercise 3 - Use Specs coding for more comprehensive implementation 
 
 ```
 
@@ -65,39 +82,22 @@ Create a more comprehensive modern web-based shooting application with following
 
 ```
 
-#### 2.1 Review the Requirements ( requirements.md ) provide by Kiro 
+#### 3.1 Review the Requirements ( requirements.md ) provide by Kiro 
 
 <img width="731" height="630" alt="image" src="https://github.com/user-attachments/assets/b024f8a0-5387-44a3-a9d8-b55adbf6362d" />
 
-#### 2.2 Move to Design phase and review design ( design.md )
+#### 3.2 Move to Design phase and review design ( design.md )
 <img width="635" height="434" alt="image" src="https://github.com/user-attachments/assets/87efa607-f6d5-4113-9102-037855d1dc6b" />
 
 
-#### 2.3 Start implementation plan , review the Tasklist ( tasks.md )
+#### 3.3 Start implementation plan , review the Tasklist ( tasks.md )
 <img width="611" height="418" alt="image" src="https://github.com/user-attachments/assets/e2446220-7e17-4e67-a53c-f182cf0f11aa" />
 
 
-#### 2.4 Start Task by click the :zap:
+#### 3.4 Start Task by click the :zap:
 
 <img width="568" height="332" alt="image" src="https://github.com/user-attachments/assets/3a3f912d-fe8d-4e63-b7d1-5ff21de23e4e" />
 
-##  🚀 Exercise 3 - Generate Steering document in Kiro 
-
-Steering gives Kiro persistent knowledge about your project through markdown files in .kiro/steering/. Instead of explaining your conventions in every chat, steering files ensure Kiro consistently follows your established patterns, libraries, and standards.
-
-#### 3.1 Click Generate Steering Docs
-
-<img width="966" height="661" alt="image" src="https://github.com/user-attachments/assets/6a4647ee-9a60-4f14-b1f7-f1e837ad0e1a" />
-
-#### 3.2 Review the outputs markdown file from Agent Steering to make update if need
-
-- Product Overview (product.md): Defines your product's purpose, target users, and business objectives
-
-- Technology Stack (tech.md): Documents frameworks, libraries, and technical constraints
-
-- Project Structure (structure.md): Outlines file organization, naming conventions, and architectural decisions
-
-<img width="908" height="669" alt="image" src="https://github.com/user-attachments/assets/1ab7adb6-1f59-4a2d-ba03-fef8ea563160" />
 
 ##  🚀 Exercise 4 - Add MCP server in Kiro 
 
