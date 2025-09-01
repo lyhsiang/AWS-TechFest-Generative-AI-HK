@@ -39,25 +39,29 @@ In the Let's build page, select **Spec** instead of Vibe. This will open the spe
 - You will see two available options:
   - **Vibe** - Chat first, build later. Explore ideas and iterate as you discover requirements
   - **Spec** - Plan first, build later. Create requirements and design before starting to code
-- For this practice, choose "Spec" mode
 - Set the model to "Claude Sonnet 4" (or latest available version)
 - Ensure Autopilot is enabled
 
 <img width="472" height="360" alt="image" src="https://github.com/user-attachments/assets/7a6f1648-f717-4e44-a29a-189d096a70d3" />
 
-
-##  🚀 Exercise 2 - Use Specs feature for more comprehensive implementation 
+##  🚀 Exercise 1 - Use Vibe Coding to create a simple Web base shooting game  
 
 ```
 
-Create a comprehensive modern web-based shooting application in local enviroment with following high-level requirements:
+Please help me to build a web-base shooting game and deploy to local
+
+```
+
+##  🚀 Exercise 2 - Use Specs coding for more comprehensive implementation 
+
+```
+
+Create a more comprehensive modern web-based shooting application with following high-level requirements:
 
 1) A clear introduction page about how to play the game
 2) A healthy bar or status of enemies for user to understand how many time left to take it down 
 3) Allow user to select different themes and character, let's make 3 different themes and 3 different spaceship please refer to  Masked Rider themes 2) ultra man 3) Godzilla.
-4) Implement a power-up system , add some random items temporarily power up the spaceship. Such as shooting more fast, or shooting more wide, please create 10 different items, the more special the better, also include explanation of the power up items
-5) Add different level of stages with more powerful enemy and enemy can shoot bullet as well
-
+4) Implement a power-up system , add some random items temporarily power up the spaceship. Such as shooting more fast, or shooting more wide, please create 6 different items, the more special the better, also include explanation of the power up items
 
 ```
 
