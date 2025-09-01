@@ -95,7 +95,73 @@ Steering gives Kiro persistent knowledge about your project through markdown fil
 
 <img width="908" height="669" alt="image" src="https://github.com/user-attachments/assets/1ab7adb6-1f59-4a2d-ba03-fef8ea563160" />
 
-QQQQQQQQQQQQQQQQQQQ
+##  🚀 Exercise 4 - Add MCP server in Kiro 
+
+Model Context Protocol (MCP) extends Kiro's capabilities by connecting to specialized servers that provide additional tools and context. This guide helps you set up, configure, and use MCP servers with Kiro.
+
+#### 4.1 Click Enable MCP
+
+<img width="368" height="268" alt="image" src="https://github.com/user-attachments/assets/0906b563-d0bf-4102-a0f8-332c7d277f97" />
+
+
+#### 4.2 Modify the mcp.json file to add the MCP server
+
+In this workshop, we will add: 
+- AWS Documentation MCP Server: This MCP server provides tools to access AWS documentation, search for content, and get recommendations.
+- AWS Diagram MCP Server: This MCP server that seamlessly creates diagrams using the Python diagrams package DSL. This server allows you to generate AWS diagrams, sequence diagrams, flow diagrams, and class diagrams using Python code.
+- AWS CDK MCP Server: MCP server for AWS Cloud Development Kit (CDK) best practices, infrastructure as code patterns, and security compliance with CDK Nag.
+
+For more AWS provided MCP, please refer this [document](https://awslabs.github.io/mcp/).
+
+```
+{
+  "mcpServers": {
+    "awslabs.aws-documentation-mcp-server": {
+      "command": "uvx",
+      "args": ["awslabs.aws-documentation-mcp-server@latest"],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR",
+        "AWS_DOCUMENTATION_PARTITION": "aws"
+      },
+      "disabled": false,
+      "autoApprove": []
+    },
+    "awslabs.cdk-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.cdk-mcp-server@latest"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "GetAwsSolutionsConstructPattern"
+      ]
+    },
+    "awslabs.aws-diagram-mcp-server": {
+      "command": "uvx",
+      "args": [
+        "awslabs.aws-diagram-mcp-server"
+      ],
+      "env": {
+        "FASTMCP_LOG_LEVEL": "ERROR"
+      },
+      "disabled": false,
+      "autoApprove": [
+        "list_icons",
+        "list_icons",
+        "generate_diagram",
+        "get_diagram_examples",
+        "list_icons"
+      ]
+    }
+  }
+}
+
+```
+
+QQQQQQQQQQQQQQQQQQQQQQ
 
 
 ```
