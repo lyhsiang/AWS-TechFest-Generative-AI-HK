@@ -69,12 +69,17 @@ Please help me to build a web-base shooting game and deploy to local.
 
 Steering gives Kiro persistent knowledge about your project through markdown files in .kiro/steering/. Instead of explaining your conventions in every chat, steering files ensure Kiro consistently follows your established patterns, libraries, and standards.
 
-### Step 1: Click Generate Steering Docs
+### 1.1 Click Generate Steering Docs
 
 <img width="966" height="661" alt="image" src="https://github.com/user-attachments/assets/6a4647ee-9a60-4f14-b1f7-f1e837ad0e1a" />
 
+### 1.1 Review the outputs markdown file from Agent Steering 
 
-### 1.1 Requirements Specification
+<img width="908" height="669" alt="image" src="https://github.com/user-attachments/assets/1ab7adb6-1f59-4a2d-ba03-fef8ea563160" />
+
+##  🚀 Exercise 2 - Specs implementation with more comprehensive requirements for this application 
+
+
 
 Start by asking Kiro to help you create a detailed requirements specification:
 
