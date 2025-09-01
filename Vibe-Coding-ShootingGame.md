@@ -71,9 +71,10 @@ After the basic game is created, use the following prompt to improve the control
 
 ```
 Use keyboard to control spaceship is hard to target the enemies. Please help me to add the cursor mode. Also, please follow below rules:
-- With cursor mode, please do not add Y axis direction movement, and the bullet on can shoot straight forward.
-- Do not add auto-aim function.
+- The bullet can only be shoot straight forward. 
+- Do not add auto-aim function. 
 - With cursor mode, please add a aim dot to represent cursor position.
+- Allow customer could switch between cursor and keyboard control mode.
 ```
 
 **Improvement highlights:**
@@ -88,12 +89,11 @@ Use keyboard to control spaceship is hard to target the enemies. Please help me 
 Continue using the following prompt to enhance game functionality:
 
 ```
-Please help me add a health bar on enemies to understand how many time left to take down it. Meanwhile, please add the how-to-play on the page
+Please help me add a health bar on enemies to understand how many time left to take down it.
 ```
 
 **New features:**
 - Enemy health bar display
-- Game instruction page
 - Visual health indicators
 
 ### Step 7: Add Start Screen
@@ -101,19 +101,19 @@ Please help me add a health bar on enemies to understand how many time left to t
 Continue using the following prompt to enhance game functionality:
 
 ```
-Create a start game page.
+Create a start game page and control instruction page.
 ```
 
 **New features:**
 - Game start screen
-- Initial control method selection
+- Game instruction page
 
 ### Step 8: Implement Power-up System
 
 Use the following prompt to add power-up mechanics:
 
 ```
-I would like to add some random dropped items to temporarily power up myself. Such as shooting more fast, or shooting more wide.
+Add some random dropped items to temporarily power up myself. Such as shooting more fast, or shooting more wide.At the same time, please explain what the functions of these power items are.
 ```
 
 **Power-up system includes:**
