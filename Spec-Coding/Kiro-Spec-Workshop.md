@@ -175,7 +175,7 @@ Agent Hooks are powerful automation tools that streamline your development workf
 <img width="393" height="731" alt="image" src="https://github.com/user-attachments/assets/22af98c2-f7e8-470c-9cf6-ec695a711f30" />
 
 
-#### 4.2 Describe the hood using natural language
+#### 4.2 Describe the hook using natural language
 
 We want agent hooks to help us monitoring the CDK resource files change, and keep generating the AWS service diagram by using AWS Diagram MCP Server.
 
@@ -187,8 +187,15 @@ After the hook create complete and CDK resource files have change, you should se
 
 <img width="1904" height="1940" alt="image" src="https://github.com/user-attachments/assets/b619e7e0-d667-40a5-8961-4ebd9aa2661b" />
 
+##  🚀 Exercise 5 - Create a new Spec for AWS enviroment deployment 
 
-
+```
+I have a web-based shooting application need to deploy to AWS Cloud. Create a comprehensive AWS architecture with following high-level requirements:
+1) Must use AWS serverless services, such as Cloudfront, S3, etc..
+2) Follow each service's configuration best practice
+3) Prefer to use Infrasturce as Code solution to deploy, such as AWS CDK.
+4) Since we are in demo, please do not add any new feature for the game.
+```
 
 ## 🚀 Exercise 6 -  Cleanup and Resource Management
 
