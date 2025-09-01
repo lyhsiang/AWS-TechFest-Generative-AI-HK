@@ -1,7 +1,5 @@
 # 🚀 Kiro Spec Workshop: Hands-On Exercises
 
-> **Master specification-driven development** through practical exercises that demonstrate real-world scenarios and build your expertise with Kiro Specs.
-
 ## Introduction
 
 In this section, you will learn how to use Kiro in a spec-driven development style. Unlike vibe coding where you give high-level instructions and let Kiro figure everything out, spec coding involves creating detailed specifications that break down complex features into manageable, well-defined tasks. This approach provides better control, documentation, and iterative development for complex projects.
