@@ -180,7 +180,7 @@ Agent Hooks are powerful automation tools that streamline your development workf
 We want agent hooks to help us monitoring the CDK resource files change, and keep generating the AWS service diagram by using AWS Diagram MCP Server.
 
 ```
-Monitors CDK resource files for AWS service changes and automatically generates or updates AWS service diagrams using the Python diagrams package DSL.
+Analyze the modified CDK files and generate or update AWS service architecture diagrams using the PPython diagrams package DSL. Parse the CDK code to identify AWS services, their relationships, and data flow. If the previous diagram not exist, create a visual representation showing the infrastructure components, connections, and dependencies. Include proper grouping for VPCs, subnets, and logical service boundaries. Otherwise, delete the previous diagram before create new one. Output the Python diagrams code that can be executed to generate the architecture diagram.
 ```
 
 After the hook create complete and CDK resource files have change, you should see the similiar diagram as following example:
