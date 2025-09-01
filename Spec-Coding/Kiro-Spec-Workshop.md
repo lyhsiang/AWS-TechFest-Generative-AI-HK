@@ -184,13 +184,9 @@ After the hook create complete and CDK resource files have change, you should se
 <img width="1904" height="1940" alt="image" src="https://github.com/user-attachments/assets/b619e7e0-d667-40a5-8961-4ebd9aa2661b" />
 
 
-QQQQQQQQQQQQQQQQQQQQQQ
 
 
-
-
-
-## 🚀 Exercise X -  Cleanup and Resource Management
+## 🚀 Exercise 6 -  Cleanup and Resource Management
 
 ```
 Create and execute cleanup procedures:
