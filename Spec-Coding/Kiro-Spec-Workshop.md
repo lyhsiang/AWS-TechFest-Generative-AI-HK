@@ -13,25 +13,18 @@ Create a folder named `MyShootingGame` and open it in Kiro. Instead of starting 
 
 In the Let's build page, select **Spec** instead of Vibe. This will open the spec creation interface.
 
-## 📋 Prerequisites
-
-- AWS account with full permissions
-- Configured AWS CLI
-
-## 🚀 Step-by-Step Guide
-
 ### 📋 Prerequisites
 
 - Installed and running Kiro IDE
 - AWS account with S3 and CloudFront access permissions
 - Configured AWS CLI (for deployment)
 
-### Step 1: Create Project Folder
+### Setup 1: Create Project Folder
 
 - On your computer, create a folder named `MyShootingGame`
 - This will become the project workspace for your shooting game application
 
-### Step 2: Open Project in Kiro
+### Setup 2: Open Project in Kiro
 
 - Launch Kiro IDE
 - Click the "Open a project" button
@@ -40,36 +33,59 @@ In the Let's build page, select **Spec** instead of Vibe. This will open the spe
 
 <img width="472" height="360" alt="image" src="https://github.com/user-attachments/assets/98371ca9-9c91-48ab-a978-b7ed09e6080c" />
 
-### Step 3: Access Let's Build Feature
+### Setup 3: Access Let's Build Feature
 
 - In Kiro, navigate to the "Let's build" page
 - You will see two available options:
   - **Vibe** - Chat first, build later. Explore ideas and iterate as you discover requirements
   - **Spec** - Plan first, build later. Create requirements and design before starting to code
-- For this practice, choose "Vibe" mode
+- For this practice, choose "Spec" mode
 - Set the model to "Claude Sonnet 4" (or latest available version)
 - Ensure Autopilot is enabled
 
 <img width="472" height="360" alt="image" src="https://github.com/user-attachments/assets/7a6f1648-f717-4e44-a29a-189d096a70d3" />
 
 
-### Step 4: Create Basic Shooting Game
-
-In Kiro's chat area, enter the following prompt:
+##  🚀 Exercise 2 - Use Specs feature for more comprehensive implementation 
 
 ```
-Please help me to build a web-base shooting game and deploy to local.
+
+Create a comprehensive modern web-based shooting application in local enviroment with following high-level requirements:
+
+1) A clear introduction page about how to play the game
+2) A  healthy bar or status of enemies for user to understand how many time left to take it down 
+3) Allow user to select different themes and character, let's make 3 different themes and 3 different spaceship please refer to  Masked Rider themes 2) ultra man 3) Godzilla.
+4) Implement a power-up system , add some random items temporarily power up the spaceship. Such as shooting more fast, or shooting more wide, please create 10 different items, the more special the better, also include explanation of the power up items
+5) Add different level of stages with more powerful enemy and enemy can shoot bullet as well
+
+
 ```
 
-##  🚀 Exercise 1 - Generate Steering document in Kiro 
+#### 2.1 Review the Requirements ( requirements.md ) provide by Kiro 
+
+<img width="731" height="630" alt="image" src="https://github.com/user-attachments/assets/b024f8a0-5387-44a3-a9d8-b55adbf6362d" />
+
+#### 2.2 Move to Design phase and review design ( design.md )
+<img width="635" height="434" alt="image" src="https://github.com/user-attachments/assets/87efa607-f6d5-4113-9102-037855d1dc6b" />
+
+
+#### 2.3 Start implementation plan , review the Tasklist ( tasks.md )
+<img width="611" height="418" alt="image" src="https://github.com/user-attachments/assets/e2446220-7e17-4e67-a53c-f182cf0f11aa" />
+
+
+#### 2.4 Start Task by click the :zap:
+
+<img width="568" height="332" alt="image" src="https://github.com/user-attachments/assets/3a3f912d-fe8d-4e63-b7d1-5ff21de23e4e" />
+
+##  🚀 Exercise 3 - Generate Steering document in Kiro 
 
 Steering gives Kiro persistent knowledge about your project through markdown files in .kiro/steering/. Instead of explaining your conventions in every chat, steering files ensure Kiro consistently follows your established patterns, libraries, and standards.
 
-#### 1.1 Click Generate Steering Docs
+#### 3.1 Click Generate Steering Docs
 
 <img width="966" height="661" alt="image" src="https://github.com/user-attachments/assets/6a4647ee-9a60-4f14-b1f7-f1e837ad0e1a" />
 
-#### 1.2 Review the outputs markdown file from Agent Steering to make update if need
+#### 3.2 Review the outputs markdown file from Agent Steering to make update if need
 
 - Product Overview (product.md): Defines your product's purpose, target users, and business objectives
 
@@ -79,38 +95,8 @@ Steering gives Kiro persistent knowledge about your project through markdown fil
 
 <img width="908" height="669" alt="image" src="https://github.com/user-attachments/assets/1ab7adb6-1f59-4a2d-ba03-fef8ea563160" />
 
+QQQQQQQQQQQQQQQQQQQ
 
-##  🚀 Exercise 2 - Use Specs feature for more comprehensive implementation 
-
-#### 2.1 Go to Specs and click "+" asking Kiro to help you create a detailed requirements specification 
-
-<img width="317" height="386" alt="image" src="https://github.com/user-attachments/assets/13e57958-a17e-47b3-a60e-2a85bed8c1d7" />
-
-
-```
-
-Create a more comprehensive modern web-based shooting application with following high-level requirements: 
-1) A clear page about how to play in the beginning  
-2) Include a clear healthy bar or status of enemies for user to understand how many time left to take it down, 
-3) allow user to select different themes and character, let's make 3 different themes and 3 different spaceship please refer to  a) Masked Rider themes b) ultraman c) Godzilla. 
-4) implement a power-up system , add some random items temporarily power up myself. Such as shooting more fast, or shooting more wide, please create 10 different items, the more special the better
-```
-
-#### 2.1 Review the Requirements ( requirements.md ) provide by Kiro 
-
-<img width="731" height="630" alt="image" src="https://github.com/user-attachments/assets/b024f8a0-5387-44a3-a9d8-b55adbf6362d" />
-
-#### 2.2 Move to Design phase and review design or design.md 
-<img width="635" height="434" alt="image" src="https://github.com/user-attachments/assets/87efa607-f6d5-4113-9102-037855d1dc6b" />
-
-
-#### 2.3 Start implementation plan , review the Tasklist or tasks.md 
-<img width="611" height="418" alt="image" src="https://github.com/user-attachments/assets/e2446220-7e17-4e67-a53c-f182cf0f11aa" />
-
-
-#### 2.4 Start Task by one click
-
-<img width="568" height="332" alt="image" src="https://github.com/user-attachments/assets/3a3f912d-fe8d-4e63-b7d1-5ff21de23e4e" />
 
 ```
 
