@@ -211,7 +211,7 @@ Create and execute cleanup procedures:
 ```
 
 **Expected Outcome**
-Kiro will generate a comprehensive inventory of all AWS resources deployed for your chatbot application, including S3 buckets, CloudFront distributions, API Gateway endpoints, Lambda functions, IAM roles, and any other resources. It will then create cleanup scripts (using AWS CDK, CloudFormation, or AWS CLI) to systematically remove these resources in the correct order to avoid dependency issues. The implementation will include verification steps to ensure all resources are properly deleted and documentation for any data that should be backed up before cleanup. Finally, Kiro will provide instructions for re-deploying the application in the future if needed.
+Kiro will generate will create cleanup scripts (using AWS CDK, CloudFormation, or AWS CLI) to systematically remove these resources in the correct order to avoid dependency issues. The implementation will include verification steps to ensure all resources are properly deleted and documentation for any data that should be backed up before cleanup. Finally, Kiro will provide instructions for re-deploying the application in the future if needed.
 
 After completing this exercise, you'll have successfully cleaned up all AWS resources used by your chatbot application, preventing any unexpected charges. You'll also have documentation and scripts that make it easy to redeploy the application in the future if desired.
 
