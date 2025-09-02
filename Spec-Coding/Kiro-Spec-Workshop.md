@@ -185,7 +185,8 @@ Analyze the modified CDK files and generate or update AWS service architecture d
 
 After the hook create complete and CDK resource files have change, you should see the similiar diagram as following example:
 
-<img width="1904" height="1940" alt="image" src="https://github.com/user-attachments/assets/b619e7e0-d667-40a5-8961-4ebd9aa2661b" />
+<img width="1620" height="2106" alt="image" src="https://github.com/user-attachments/assets/0d9e81dc-0ffd-4837-b768-7a852290538c" />
+
 
 ##  🚀 Exercise 5 - Create a new Spec for AWS enviroment deployment 
 
