@@ -237,3 +237,7 @@ After completing all exercises in this workshop, take some time to reflect on th
 Spec coding with Kiro provides a more structured approach to AI-assisted development. While it requires more upfront planning, it results in better-documented, more maintainable, and more predictable software development processes.
 
 The specifications you create become living documents that can be updated and refined as requirements change, making your development process more agile and responsive to changing needs. Consider using spec coding for your next complex project where documentation, maintainability, and team collaboration are important factors.
+
+### Survey 
+
+
