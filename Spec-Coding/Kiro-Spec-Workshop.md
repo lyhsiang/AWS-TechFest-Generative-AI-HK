@@ -16,6 +16,7 @@ Create a folder named `MyShootingGame` and open it in Kiro. Instead of starting 
 - Installed and running Kiro IDE ( https://kiro.dev/downloads )
 - AWS account with S3 and CloudFront access permissions
 - Configured AWS CLI (for deployment)
+- Install uv from Astral ( https://docs.astral.sh/uv/getting-started/installation )
 
 **Login to Kiro**
 
@@ -119,6 +120,12 @@ Create a more comprehensive modern web-based shooting application with following
 ##  🚀 Exercise 4 - Add MCP server in Kiro 
 
 Model Context Protocol (MCP) extends Kiro's capabilities by connecting to specialized servers that provide additional tools and context. This guide helps you set up, configure, and use MCP servers with Kiro.
+
+Before you start this exercise, please make sure you have install the uv command in your environment. To check the uv command whether has been installed, you could use following commnad:
+
+```
+$ uv self version
+```
 
 #### 4.1 Click Enable MCP
 
