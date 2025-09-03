@@ -121,11 +121,13 @@ Create a more comprehensive modern web-based shooting application with following
 
 Model Context Protocol (MCP) extends Kiro's capabilities by connecting to specialized servers that provide additional tools and context. This guide helps you set up, configure, and use MCP servers with Kiro.
 
-> :warning: Before you start this exercise, please make sure you have install the uv command in your environment. To check the uv command whether has been installed, you could use following commnad:
+> :warning:
+> Before you start this exercise, please make sure you have install the uv command in your environment. To check the uv command whether has been installed, you could use following commnad:
 
 ```
 $ uv self version
 ```
+> If you didn't install it yet, please check [Astral](https://docs.astral.sh/uv/getting-started/installation) to install uv command.
 
 #### 4.1 Click Enable MCP
 
